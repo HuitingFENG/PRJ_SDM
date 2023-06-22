@@ -6,7 +6,7 @@ const Ajax = () => {
 
     return (
         <>
-            {/* <Text>Ajax</Text> */}
+            <Text>Ajax</Text>
             <Appfooter />
             <CourseInfo courseName="Ajax"/>
         </>
