@@ -16,6 +16,7 @@ import Contact from "./pages/Contact/SalesDepartment";
 import Register from "./pages/Register/Register";
 import SalesDepartment from "./pages/Contact/SalesDepartment";
 import RegistrationManager from "./pages/Contact/RegistrationManager";
+import TrainingRegistrationManager from "./pages/TrainingRegistrationManager/TrainingRegistrationManager";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalogManager" element={<CatalogManager />} />
+            <Route path="/TrainingRegistrationManager" element={<TrainingRegistrationManager />} />
             <Route path="/client" element={<Client />} />
             <Route path="/trainer" element={<Trainer />} />
             <Route path="/php" element={<Php />} />

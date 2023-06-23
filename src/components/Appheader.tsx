@@ -32,6 +32,21 @@ const Appheader = () => {
                     </Stack>
                 </Stack>
                 <Stack direction='column' spacing={4} borderRight="1px solid black" paddingRight="40px">
+                    <Text textAlign="center">TrainingRegistrationManager</Text>
+                    <Stack direction='row' spacing={4}>
+                        <Link as={RouterLink} to="/TrainingRegistrationManager" textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                            <Button bg='#4D77FF' colorScheme='white' variant='solid'>
+                            <motion.span
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                Se Connecter
+                            </motion.span>
+                            </Button>
+                        </Link>
+                    </Stack>
+                </Stack>
+                <Stack direction='column' spacing={4} borderRight="1px solid black" paddingRight="40px">
                     <Text textAlign="center">Client</Text>
                     <Stack direction='row' spacing={4}>
                         <Link as={RouterLink} to="/Client" textDecoration="none" _hover={{ textDecoration: 'none' }}>
