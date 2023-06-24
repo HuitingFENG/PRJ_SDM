@@ -1,6 +1,5 @@
 package com.sdm.informationsystem.model;
 
-import com.sdm.informationsystem.common.Observer;
 import jakarta.persistence.*;
 
 import java.util.Arrays;
@@ -10,13 +9,65 @@ import java.util.ArrayList;
 
 
 @Entity
-public class Training {
+public class Training implements TrainingInterface{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int trainingID;
+    private String trainingType;
+    private String trainingLocation;
+    // private List<int> trainingRegistrations;
+
+    /*
+    public Training (String t, String l){
+        this.trainingType = t;
+        this.trainingLocation = l;
+        // this.trainingRegistrations = tr;
+    }
+    */
+    public Training () {
+
+    }
+
+    @Override
+    public void schedule() {
+        System.out.println("Training scheduled on type : " + trainingType + " in location : " + trainingLocation);
+    }
+
+    @Override
+    public void cancel() {
+        System.out.println("Training canceled on type : " + trainingType + " in location : " + trainingLocation);
+    }
+
+    public int getTrainingID() {
+        return trainingID;
+    }
+
+    public void setTrainingID(int trainingID) {
+        this.trainingID = trainingID;
+    }
+
+    public String getTrainingType() {
+        return trainingType;
+    }
+
+    public void setTrainingType(String trainingType) {
+        this.trainingType = trainingType;
+    }
+
+    public String getTrainingLocation() {
+        return trainingLocation;
+    }
+
+    public void setTrainingLocation(String trainingLocation) {
+        this.trainingLocation = trainingLocation;
+    }
+
+/*
     @Transient
     private ArrayList<Observer> observers;
     private String trainingContent;
+    */
+
     /*
     //private Boolean trainingAuthorized;
     private String trainingType; // inter or intra
@@ -30,6 +81,8 @@ public class Training {
     private String trainingCancelBy;
     private Boolean trainingFinishPreparation;
     */
+
+    /*
     public Training() {
         observers = new ArrayList<>();
     }
@@ -56,6 +109,8 @@ public class Training {
     public String getTrainingContent() {
         return this.trainingContent;
     }
+    */
+
     /*
     public Boolean getTrainingAuthorized() {
         return trainingAuthorized;

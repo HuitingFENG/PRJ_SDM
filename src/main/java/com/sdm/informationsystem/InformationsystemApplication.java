@@ -13,10 +13,8 @@ import java.util.Date;
 
 @SpringBootApplication
 public class InformationsystemApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(InformationsystemApplication.class, args);
 		// Assuming you have established a database connection and obtained a reference to the EntityManager or EntityManagerFactory
 	}
-
 }

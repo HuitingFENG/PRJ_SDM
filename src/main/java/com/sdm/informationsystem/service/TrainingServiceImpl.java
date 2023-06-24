@@ -28,6 +28,7 @@ public class TrainingServiceImpl implements TrainingService{
         return trainingRepository.findAll();
     }
 
+    /*
     @Override
     public void update(Training training) {
         // Add your logic for updating a training here
@@ -37,4 +38,6 @@ public class TrainingServiceImpl implements TrainingService{
     public void displayTraining() {
         System.out.println("Training content updated to: " + training.getTrainingContent());
     }
+    */
+
 }

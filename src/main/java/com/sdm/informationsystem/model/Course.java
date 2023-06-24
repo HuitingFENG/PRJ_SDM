@@ -18,6 +18,9 @@ public class Course {
     private String CourseLocations;
     private String CourseContent;
 
+
+
+
     public Course() {
     }
 
